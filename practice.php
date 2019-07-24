@@ -10,7 +10,7 @@ echo "\n";
 //課題2
 function f($a,$b){
     $result = 0;
-    $result($a +$b);
+    $result = $a +$b;
 
 return $result;
 }
@@ -20,12 +20,24 @@ $arr = array(1,3,5,7,9);
 echo array_product($arr);
 echo "\n";
 
+//課題3-2
+$result = 1;
+foreach ($arr as $a){
+ $result = $result * $a;
+}
+return $result;
+
+
+
 //課題4
  function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
  $max_number = $arr[0];
  foreach($arr as $a){
  //どうしたらいいかわからない・・・・
+ if ($max_number < $a){
+  $max_number = $a;
+ }
  asort($arr);
  print_r($arr);
  }
