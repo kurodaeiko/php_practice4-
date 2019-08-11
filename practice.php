@@ -38,9 +38,6 @@ return $result;
  if ($max_number < $a){
   $max_number = $a;
  }
- asort($arr);
- print_r($arr);
- }
   return $max_number;
  }
  
